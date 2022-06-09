@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Zeszyt Krystian Banach</title>
+</head>
+<body>
+
+    <header>
+        <dd behavior="alternate" direction="right" Scrollamount=10 >
+         Zeszyt Krystian Banach
+        </dd>
+    </header>
+
+    <hr>
+        <nav>   
+            <div class="block" id="a" onclick="location.href='doctype.html'">Algorytm</div>
+            <div class="block" id="a" onclick="location.href='schblk.html'">Schemat blokowy</div>
+            <div class="block" id="a" onclick="location.href='przlin.html'">Przeszukiwanie liniowe</div>
+            <div class="block" id="a" onclick="location.href='wybin.html'">Wyszukiwanie binarne </div>
+            <div class="block" id="a" onclick="location.href='sorbąb.html'">Sortowanie bąbelkowe</div>
+            <div class="block" id="a">Algorytm selection sort</div>
+            
+        </nav>
+    <hr>
+
+    <br><br><br><br><br><br>
+
+    <main>
+         
+        <br>
+        <h1><span style="color: #000000; font-size: 60px;" >&nbsp;Algorytm selection sort</span></h1>
+
+        <p>
+            Zasada Działania<br>
+            Algorytm selection sort nie należy do przesadnie skomplikowanych,
+            więc nie trzeba się go obawiać. Sedno jego działania można ująć w jednym zdaniu – „Szukanie elementu minimalnego i przenoszenie go na początek”.
+            Przejdźmy jednak do nieco bardziej szczegółowego opisu.
+            Algorytm rozpoczynamy, chcąc umieścić element minimalny całej tablicy, na samym jej początku.
+            Przechodzimy więc przez całą tablicę, szukając go. Gdy już go odnajdziemy, zamieniamy go miejscami z elementem znajdującym się na zerowej pozycji.
+            Wiemy już, że najmniejszy z elementów w naszym zbiorze, znajduje się na początku, więc zerowym miejscem w tablicy nie musimy się już przejmować.
+            Następny krok poszukiwania elementu minimalnego, zaczniemy więc nie od zerowej, a od pierwszej pozycji w tablicy, gdzie umieścimy kolejny minimalny element z rozpatrywanego podzbioru. Algorytm wykonujemy do momentu, gdy w kolejnej iteracji zaczynamy poszukiwanie minimalnego elementu na ostatniej pozycji tablicy. Otrzymujemy w ten sposób posortowany rosnąco zbiór.
+        </p>
+        <br>
+
+    </main>
+
+    <br>
+</body>
+</html>

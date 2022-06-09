@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Zeszyt Krystian Banach</title>
+</head>
+<body>
+
+    <header>
+        <dd behavior="alternate" direction="right" Scrollamount=10 >
+         Zeszyt Krystian Banach
+        </dd>
+    </header>
+
+    <hr>
+        <nav>   
+            <div class="block" id="a" onclick="location.href='doctype.html'">Algorytm</div>
+            <div class="block" id="a" onclick="location.href='schblk.html'">Schemat blokowy</div>
+            <div class="block" id="a">Przeszukiwanie liniowe</div>
+            <div class="block" id="a" onclick="location.href='wybin.html'">Wyszukiwanie binarne </div>
+            <div class="block" id="a" onclick="location.href='sorbąb.html'">Sortowanie bąbelkowe</div>
+            <div class="block" id="a" onclick="location.href='algsel.html'">Algorytm selection sort</div>
+            
+        </nav>
+    <hr>
+
+    <br><br><br><br><br><br>
+
+    <main>
+         
+        <br>
+        <h1><span style="color: #000000; font-size: 60px;" >&nbsp;Przeszukiwanie liniowe</span></h1>
+
+        <p>
+            Przeszukiwanie liniowe (lub wyszukiwanie sekwencyjne) – najprostszy algorytm wyszukiwania informacji w ciągu danych, np. zapisanych w tablicy lub na liście.
+            Polega na porównywaniu żądanego klucza z kolejnymi kluczami z sekwencji danych – wyszukiwanie kończy się powodzeniem, gdy zostanie znaleziony klucz, albo niepowodzeniem,
+            gdy zostaną przejrzane wszystkie klucze.
+        </p>
+        <p>
+            Wyszukiwanie liniowe może być jedynym sposobem wyszukiwania, gdy nie wiadomo niczego na temat kolejności kluczy.
+            Dla dużej liczby danych algorytm jest bardzo nieefektywny, jednak gdy danych jest względnie mało, jest z powodzeniem stosowany  
+        </p>
+        <p>
+            Dodatkowo jeśli wiadomo, że pewne klucze mogą być wyszuki wane częściej niż inne,
+            można modyfikować kolejność danych, tak aby ponowne wyszukiwanie tego samego klucza kończyło się powodzeniem szybciej.
+            Metoda ta nosi nazwę move-to-front, Donald Knuth wymienia w swojej pracy Sztuka programowania dwie strategie:
+        </p>
+        <p>
+            Natychmiastowe przesunięcie znalezionego elementu na początek sekwencji,<br>
+            przesunięcie tylko o jedną pozycję w stronę początku sekwencji
+        </p>
+        <br>
+
+    </main>
+
+    <br>
+</body>
+</html>

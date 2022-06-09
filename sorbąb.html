@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Zeszyt Krystian Banach</title>
+</head>
+<body>
+
+    <header>
+        <dd behavior="alternate" direction="right" Scrollamount=10 >
+         Zeszyt Krystian Banach
+        </dd>
+    </header>
+
+    <hr>
+        <nav>   
+            <div class="block" id="a" onclick="location.href='doctype.html'">Algorytm</div>
+            <div class="block" id="a" onclick="location.href='schblk.html'">Schemat blokowy</div>
+            <div class="block" id="a" onclick="location.href='przlin.html'">Przeszukiwanie liniowe</div>
+            <div class="block" id="a" onclick="location.href='wybin.html'">Wyszukiwanie binarne </div>
+            <div class="block" id="a">Sortowanie bąbelkowe</div>
+            <div class="block" id="a" onclick="location.href='algsel.html'">Algorytm selection sort</div>
+            
+        </nav>
+    <hr>
+
+    <br><br><br><br><br><br>
+
+    <main>
+         
+        <br>
+        <h1><span style="color: #000000; font-size: 60px;" >&nbsp;Sortowanie bąbelkowe</span></h1>
+
+        <p>
+            To prosta metoda sortowania o złożoności czasowej (n^{2}) i pamięciowej O(1) Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności, jeżeli zaburza ona porządek, w jakim się sortuje tablicę. Sortowanie kończy się, gdy podczas kolejnego przejścia nie dokonano żadnej zmiany.
+        </p>
+        <p>
+            Dowów matematyczny<br>
+            Algorytm opiera się na zasadzie maksimum, tj. każda liczba jest mniejsza lub równa od liczby maksymalnej. Porównując kolejno liczby, można wyznaczyć największą z nich. Następnie ciąg częściowo posortowany (mający liczbę maksymalną) można skrócić o tę liczbę i ponowić szukanie maksimum, już bez elementów odrzuconych i tak długo, aż zostanie nam jeden element. Otrzymane kolejne maksima są coraz mniejsze, przez co ciąg jest uporządkowany.
+        </p>
+        <p>
+            Złożoność Obliczeniowa<br>
+            Algorytm wykonuje n-1 przejść, a w każdym przejściu wykonuje n-k porównań (gdzie k=1,2...n-1 to numer przejścia), przez co jego teoretyczna złożoność czasowa wynosi O(n^2) W podstawowej wersji algorytmu nie można tego czasu skrócić, a każda permutacja powoduje, że algorytm jest wykonywany w czasie pesymistycznym.
+        </p>
+        <p>
+            Modyfikacje powodujące ulepszenie czasu<br>
+            Algorytm można rozbudować tak, by czas optymistyczny był lepszy. Najłatwiejsze jest dodanie flagi informującej, czy w danej iteracji doszło do zmiany. Flaga jest zerowana na wejściu w przebiegu pętli, w przypadku natrafienia na zmianę jest podnoszona, a po wykonaniu przejścia sprawdzana. Jeśli nie było zmian, to sortowanie jest zakończone. Modyfikacja ta wprawdzie wydłuża czas wykonania jednego przejścia przez pętlę (gdyż trzeba wyzerować flagę, podnieść ją i sprawdzić), jednakże w wariancie optymistycznym (ciąg częściowo posortowany) może zaoszczędzić iteracji, przez co algorytm będzie działać szybciej. 
+        </p>
+        <br>
+
+    </main>
+
+    <br>
+</body>
+</html>

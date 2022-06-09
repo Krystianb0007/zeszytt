@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Zeszyt Krystian Banach</title>
+</head>
+<body>
+
+    <header>
+        <dd behavior="alternate" direction="right" Scrollamount=10 >
+         Zeszyt Krystian Banach
+        </dd>
+    </header>
+
+    <hr>
+        <nav>   
+            <div class="block" id="a" onclick="location.href='doctype.html'">Algorytm</div>
+            <div class="block" id="a" onclick="location.href='schblk.html'">Schemat blokowy</div>
+            <div class="block" id="a" onclick="location.href='przlin.html'">Przeszukiwanie liniowe</div>
+            <div class="block" id="a">Wyszukiwanie binarne </div>
+            <div class="block" id="a" onclick="location.href='sorbąb.html'">Sortowanie bąbelkowe</div>
+            <div class="block" id="a" onclick="location.href='algsel.html'">Algorytm selection sort</div>
+            
+        </nav>
+    <hr>
+    <br><br><br><br><br><br>
+
+    <main>
+         
+        <br>
+        <h1><span style="color: #000000; font-size: 60px;" >&nbsp;Wyszukiwanie binarne</span></h1>
+
+        <p>
+            Wyszukiwanie binarne – algorytm opierający się na metodzie dziel i zwyciężaj, który w czasie logarytmicznym stwierdza, czy szukany element znajduje się w uporządkowanej tablicy i jeśli się znajduje, podaje jego indeks. Np. jeśli tablica zawiera milion elementów, wyszukiwanie binarne musi sprawdzić maksymalnie 20 elementów x 20) w celu znalezienia żądanej wartości. Dla porównania wyszukiwanie liniowe wymaga w najgorszym przypadku przejrzenia wszystkich elementów tablicy.
+        </p>
+        <p>
+            Jak to działa?<br>
+            Uporządkowana tablica jest dzielona na coraz mniejsze przedziały do momentu, gdy przedział osiągnie długość jeden, kiedy możemy jednym sprawdzeniem określić, czy element znajduje się w tablicy. W pojedynczym kroku rozważa się jeden przedział charakteryzowany dwoma indeksami: początkowym a i końcowym b. Algorytm rozpoczyna wyszukiwanie od całej tablicy.Następnie wyznaczany jest środek Przedział jest zawężany – dzięki uporządkowaniu danych wiadomo, że albo poszukiwany element może znajdować się w indeksach [a; c] albo za nim. Innymi słowy wybór ogranicza się do przedziału [a,c] gdy poszukiwany element jest mniejszy lub równy zapisanemu pod indeksem c, albo [c+1, b] w przeciwnym razie.
+        </p>
+        <br>
+
+    </main>
+
+    <br>
+</body>
+</html>
